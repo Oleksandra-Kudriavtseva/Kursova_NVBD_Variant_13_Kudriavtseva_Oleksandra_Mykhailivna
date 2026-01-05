@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SSIS_KURSOVA", "SSIS_KURSOVA\SSIS_KURSOVA.dtproj", "{1CB0A2C4-9AC7-9CC6-32FE-A134722277E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CB0A2C4-9AC7-9CC6-32FE-A134722277E9}.Development|Default.ActiveCfg = Development
+		{1CB0A2C4-9AC7-9CC6-32FE-A134722277E9}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9705D82A-A639-4C96-AD85-A8B776918FCF}
+	EndGlobalSection
+EndGlobal

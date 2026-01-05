@@ -1,0 +1,5 @@
+CREATE DATABASE Rent;
+GO
+
+USE Rent;
+GO

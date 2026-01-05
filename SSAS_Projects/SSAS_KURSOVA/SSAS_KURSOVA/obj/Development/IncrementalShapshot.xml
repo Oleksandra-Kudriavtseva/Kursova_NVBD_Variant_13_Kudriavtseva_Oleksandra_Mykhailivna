@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_KURSOVA</Database>
+    <Server>DESKTOP-V8V1DKN\LOCALHOST1</Server>
+    <ConnectionString>Data Source=DESKTOP-V8V1DKN\LOCALHOST1;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>3FFTG4eDasXDPIsS63RXo2QQGAg=04.01.2026 20:05:2704.01.2026 20:05:27</TimeStamp>
+        <ID>
+          <String>Rent DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>RtxJ4GlMq3CtUlv5Xx9+Ne3H7Z8=04.01.2026 20:32:2204.01.2026 20:06:06</TimeStamp>
+        <ID>
+          <String>Rent DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wh+3GsMi/PQMJ3quE/PUA7Oy3iw=04.01.2026 20:51:1704.01.2026 20:33:45</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zd5DhcfBjNK7QGyw3ay3JXHvgQ8=04.01.2026 20:44:1904.01.2026 20:34:44</TimeStamp>
+        <ID>
+          <String>Dim Contract</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ecVPoy5ZsIM9shKdXOC7ky9n43A=04.01.2026 20:44:1904.01.2026 20:34:45</TimeStamp>
+        <ID>
+          <String>Dim Tenant</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>PrG5pEHrwHXLpbelnUkrI8P8L+A=04.01.2026 20:44:1904.01.2026 20:34:45</TimeStamp>
+        <ID>
+          <String>Dim Room</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MTc4cVF+BQdCD8hnjDKP2Lk64/Y=04.01.2026 20:44:1904.01.2026 20:34:45</TimeStamp>
+        <ID>
+          <String>Dim Payment Status</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>93JPadFbhq6l+CcSO6ZlYE8h3m4=04.01.2026 20:44:1904.01.2026 20:35:07</TimeStamp>
+        <ID>
+          <String>Fact Invoice</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Pn65P1dMovqufJQYkcX4UzTzjbM=05.01.2026 3:47:0404.01.2026 20:34:448BMPPt2htH8uvO27yY29uafUtuc=04.01.2026 20:35:0704.01.2026 20:34:44</TimeStamp>
+        <ID>
+          <String>Rent DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>EwZBz6KhhFfO8HZAQsjATl9uIS0=04.01.2026 20:03:1304.01.2026 20:03:13</TimeStamp>
+      <ID>
+        <String>SSAS_KURSOVA</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2026-01-05T01:47:10.02Z</LastDeployed>
+</DeploymentSnapshot>

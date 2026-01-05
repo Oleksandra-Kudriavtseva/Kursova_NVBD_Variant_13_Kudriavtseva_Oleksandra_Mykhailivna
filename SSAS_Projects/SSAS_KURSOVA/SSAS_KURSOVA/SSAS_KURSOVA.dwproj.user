@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Rent DW</Id>
+            <Name>Rent DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQOtcNuTrzU+0q19DRas3ZQAAAAAQAAAAUgBlAG4AdAAgAEQAVwAAABBmAAAAAQAAIAAAAEDfqHzPukddC+p7E3akSEiIWkood5veVD2erAPZZQPbAAAAAA6AAAAAAgAAIAAAAIuHTDEe+wS7TxCbUlWrwI2FUWjL+doaMsNQM8jWCqzCEAAAAOOGuM92Fd6XiSZo4gbcnP5AAAAAFNIkaX8vUdhKh61DdsWo0PZ+NH1GOrB0pZV19bDJZBl0E0ZaXk3kTaIVW9+wS9lLuc67jbEGjKa6yMPQ6gq/Jw==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Rent DW</Id>
+            <Name>Rent DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQOtcNuTrzU+0q19DRas3ZQAAAAAQAAAAUgBlAG4AdAAgAEQAVwAAABBmAAAAAQAAIAAAAE8n+0V3w5iJkYjeBJzGFHjMRWNN6b3srNqeKxUbLT3HAAAAAA6AAAAAAgAAIAAAACGypVXFGokLzqkcW8KQKzifPLKODo5JoB8Inx7eNnkFEAAAAFI7tNdXrdeuvXNQscfnA/xAAAAAH0Bu8rVAb/kMPBswmfufqknWKd1LJItvFha37f/ll3ekyqomYBrXS4SVNqNiv/F//lybcXxBYYi/z7hH/QlMfw==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-V8V1DKN\LOCALHOST1</TargetServer>
+        <TargetDatabase>SSAS_KURSOVA</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

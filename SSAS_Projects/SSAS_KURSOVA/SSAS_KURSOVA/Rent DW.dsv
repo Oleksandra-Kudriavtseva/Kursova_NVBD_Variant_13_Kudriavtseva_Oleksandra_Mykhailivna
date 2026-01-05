@@ -1,0 +1,276 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="073567f7-137f-44dd-b3e2-971b13d23db4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Rent DW</ID>
+  <Name>Rent DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Rent DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Rent_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Rent_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="dddaf2bf-1280-4d7e-8e10-212eb572ee81">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimContract" msprop:DbTableName="DimContract" msprop:FriendlyName="DimContract" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0cdf8e64-de18-4b51-8602-5254b938e21a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ContractSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ContractSK" msprop:DbColumnName="ContractSK" msprop:design-time-name="30551cf6-da3e-405e-a260-2bf68c45633d" type="xs:int" />
+                  <xs:element name="ContractBK" msprop:FriendlyName="ContractBK" msprop:DbColumnName="ContractBK" msprop:design-time-name="c19e8ff6-0809-43b1-8957-838103083ee1" type="xs:int" />
+                  <xs:element name="StartDate" msprop:FriendlyName="StartDate" msprop:DbColumnName="StartDate" msprop:design-time-name="e3b0246f-9571-4de8-93ea-7b1cd76e7b4e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EndDate" msprop:FriendlyName="EndDate" msprop:DbColumnName="EndDate" msprop:design-time-name="29acf5db-4bc5-4b92-a445-5a890120c5ad" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthlyRent" msprop:FriendlyName="MonthlyRent" msprop:DbColumnName="MonthlyRent" msprop:design-time-name="0b784641-0712-4eea-a952-bd271d80be24" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimDate" msprop:DbTableName="DimDate" msprop:FriendlyName="DimDate" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f2cc76e8-422c-44e4-8417-f243d3d5430f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateSK" msprop:FriendlyName="DateSK" msprop:DbColumnName="DateSK" msprop:design-time-name="bdd98934-c6e8-4483-adaf-2bcf4903edcc" type="xs:int" />
+                  <xs:element name="FullDate" msprop:FriendlyName="FullDate" msprop:DbColumnName="FullDate" msprop:design-time-name="dcab8ef3-2eb5-40be-bcaf-a26208d211da">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="f76fb15a-74ef-4c6a-94a8-c35a598a79f3" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="aa6bc42f-0f96-4ad2-9d23-90df999d9973" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="65ccd903-5aa9-4e14-893d-e62826afa660" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimPaymentStatus" msprop:DbTableName="DimPaymentStatus" msprop:FriendlyName="DimPaymentStatus" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7ced9d67-f532-4700-9083-d4d9e8845f15">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PaymentStatusSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="PaymentStatusSK" msprop:DbColumnName="PaymentStatusSK" msprop:design-time-name="d70d4f3b-a412-4f69-8fd5-a28c8e269e95" type="xs:int" />
+                  <xs:element name="StatusName" msprop:FriendlyName="StatusName" msprop:DbColumnName="StatusName" msprop:design-time-name="2d40e750-9f9f-40af-a678-61eda5134fed" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimRoom" msprop:DbTableName="DimRoom" msprop:FriendlyName="DimRoom" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="8bbea604-4700-46a0-be9b-a56820a97370">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RoomSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="RoomSK" msprop:DbColumnName="RoomSK" msprop:design-time-name="b84de31e-c124-4d7f-b008-3f886979ad7d" type="xs:int" />
+                  <xs:element name="RoomBK" msprop:FriendlyName="RoomBK" msprop:DbColumnName="RoomBK" msprop:design-time-name="bc1c6dba-97a2-4e17-a88a-39cee3fa5817" type="xs:int" />
+                  <xs:element name="RoomNumber" msprop:FriendlyName="RoomNumber" msprop:DbColumnName="RoomNumber" msprop:design-time-name="c4dfb1d9-ba97-4e88-a826-1c4e2abcfddf" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Area" msprop:FriendlyName="Area" msprop:DbColumnName="Area" msprop:design-time-name="ae81ede8-54e7-4748-8672-10c417c72d2a" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RoomTypeSK" msprop:FriendlyName="RoomTypeSK" msprop:DbColumnName="RoomTypeSK" msprop:design-time-name="a09e0ee8-36ac-463e-b94e-2c5371002490" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimRoomType" msprop:DbTableName="DimRoomType" msprop:FriendlyName="DimRoomType" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d89f0192-4e1e-44f9-a637-caad1f5f579c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RoomTypeSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="RoomTypeSK" msprop:DbColumnName="RoomTypeSK" msprop:design-time-name="780770bd-e5a1-4612-a095-6182663c1962" type="xs:int" />
+                  <xs:element name="RoomTypeBK" msprop:FriendlyName="RoomTypeBK" msprop:DbColumnName="RoomTypeBK" msprop:design-time-name="194afae2-845d-49f8-8a05-ddb340033359" type="xs:int" />
+                  <xs:element name="TypeName" msprop:FriendlyName="TypeName" msprop:DbColumnName="TypeName" msprop:design-time-name="11f27fcc-0627-4447-9326-7d800c71edb5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTenant" msprop:DbTableName="DimTenant" msprop:FriendlyName="DimTenant" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1f1c7f68-7962-4e41-82e2-1387d8fffe0b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TenantSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="TenantSK" msprop:DbColumnName="TenantSK" msprop:design-time-name="c75d48d4-bef3-457e-a7c6-c537f79e429c" type="xs:int" />
+                  <xs:element name="TenantBK" msprop:FriendlyName="TenantBK" msprop:DbColumnName="TenantBK" msprop:design-time-name="0b21c6c1-0fbb-4695-9795-dc66e5dbd683" type="xs:int" />
+                  <xs:element name="FullName" msprop:FriendlyName="FullName" msprop:DbColumnName="FullName" msprop:design-time-name="a38cafd0-7985-4492-bade-117be4695de4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Phone" msprop:FriendlyName="Phone" msprop:DbColumnName="Phone" msprop:design-time-name="10d52058-e4fa-4319-bd4d-d1a8f6a31f87" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Email" msprop:FriendlyName="Email" msprop:DbColumnName="Email" msprop:design-time-name="d0f90397-ea6a-4042-96be-a47a19d30101" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StartDate" msprop:FriendlyName="StartDate" msprop:DbColumnName="StartDate" msprop:design-time-name="66327347-9a4e-44c8-956e-53004b99fdb8">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EndDate" msprop:FriendlyName="EndDate" msprop:DbColumnName="EndDate" msprop:design-time-name="e5ada97d-f74c-4ea3-aa5e-9dda9ae004ef" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsCurrent" msprop:FriendlyName="IsCurrent" msprop:DbColumnName="IsCurrent" msprop:design-time-name="f03f0fe7-3bca-435d-bb53-2b04c1b1540b" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactInvoice" msprop:DbTableName="FactInvoice" msprop:FriendlyName="FactInvoice" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d292cb13-ca7d-448e-ba29-6a7b97b67e35">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="InvoiceSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="InvoiceSK" msprop:DbColumnName="InvoiceSK" msprop:design-time-name="50bf7d98-79f3-4d75-a1de-1bd88ae4bac1" type="xs:int" />
+                  <xs:element name="DateSK" msprop:FriendlyName="DateSK" msprop:DbColumnName="DateSK" msprop:design-time-name="42a7e14e-9672-45bd-a906-19340b34746e" type="xs:int" />
+                  <xs:element name="TenantSK" msprop:FriendlyName="TenantSK" msprop:DbColumnName="TenantSK" msprop:design-time-name="03b40f4d-84f8-4d2b-b963-4bf43a1c992b" type="xs:int" />
+                  <xs:element name="RoomSK" msprop:FriendlyName="RoomSK" msprop:DbColumnName="RoomSK" msprop:design-time-name="289b21ee-ca2c-49f6-b133-c177b49ed0d1" type="xs:int" />
+                  <xs:element name="ContractSK" msprop:FriendlyName="ContractSK" msprop:DbColumnName="ContractSK" msprop:design-time-name="ca9b79ac-45d3-4dfd-8e04-67c76e973d03" type="xs:int" />
+                  <xs:element name="PaymentStatusSK" msprop:FriendlyName="PaymentStatusSK" msprop:DbColumnName="PaymentStatusSK" msprop:design-time-name="ca82e502-c0e3-45ec-b6ec-64c5d9bdd8f9" type="xs:int" />
+                  <xs:element name="Amount" msprop:FriendlyName="Amount" msprop:DbColumnName="Amount" msprop:design-time-name="6f40ff40-ab19-4894-8070-26f507430bf1" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactPayment" msprop:DbTableName="FactPayment" msprop:FriendlyName="FactPayment" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3c218b5e-1e08-48e5-bbdd-fd7a7ad45014">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PaymentSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="PaymentSK" msprop:DbColumnName="PaymentSK" msprop:design-time-name="65cb2098-26ad-47f2-a03b-2f3fc1d6e1f5" type="xs:int" />
+                  <xs:element name="DateSK" msprop:FriendlyName="DateSK" msprop:DbColumnName="DateSK" msprop:design-time-name="c7b848fd-e6f8-426e-a9ce-9f9f416b3328" type="xs:int" />
+                  <xs:element name="TenantSK" msprop:FriendlyName="TenantSK" msprop:DbColumnName="TenantSK" msprop:design-time-name="a674b9a6-7b7a-4158-a14a-5baf25a727b7" type="xs:int" />
+                  <xs:element name="InvoiceSK" msprop:FriendlyName="InvoiceSK" msprop:DbColumnName="InvoiceSK" msprop:design-time-name="5b506da7-f6d0-4f89-90f5-14e41950cd0b" type="xs:int" />
+                  <xs:element name="Amount" msprop:FriendlyName="Amount" msprop:DbColumnName="Amount" msprop:design-time-name="5db32af9-e15a-46fa-a6a8-6d785d5cd0b9" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimContract" />
+          <xs:field xpath="ContractSK" />
+        </xs:unique>
+        <xs:unique name="dbo_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimDate" />
+          <xs:field xpath="DateSK" />
+        </xs:unique>
+        <xs:unique name="dbo_DimPaymentStatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimPaymentStatus" />
+          <xs:field xpath="PaymentStatusSK" />
+        </xs:unique>
+        <xs:unique name="dbo_DimRoom_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimRoom" />
+          <xs:field xpath="RoomSK" />
+        </xs:unique>
+        <xs:unique name="dbo_DimRoomType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimRoomType" />
+          <xs:field xpath="RoomTypeSK" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTenant_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTenant" />
+          <xs:field xpath="TenantSK" />
+        </xs:unique>
+        <xs:unique name="dbo_FactInvoice_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactInvoice" />
+          <xs:field xpath="InvoiceSK" />
+        </xs:unique>
+        <xs:unique name="dbo_FactPayment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactPayment" />
+          <xs:field xpath="PaymentSK" />
+        </xs:unique>
+        <xs:keyref name="FK_FactPayment_Invoice" refer="dbo_FactInvoice_Constraint1">
+          <xs:selector xpath=".//dbo_FactPayment" />
+          <xs:field xpath="InvoiceSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactPayment_Date" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactPayment" />
+          <xs:field xpath="DateSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactPayment_Tenant" refer="dbo_DimTenant_Constraint1">
+          <xs:selector xpath=".//dbo_FactPayment" />
+          <xs:field xpath="TenantSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactInvoice_Status" refer="dbo_DimPaymentStatus_Constraint1">
+          <xs:selector xpath=".//dbo_FactInvoice" />
+          <xs:field xpath="PaymentStatusSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactInvoice_Room" refer="dbo_DimRoom_Constraint1">
+          <xs:selector xpath=".//dbo_FactInvoice" />
+          <xs:field xpath="RoomSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactInvoice_Tenant" refer="dbo_DimTenant_Constraint1">
+          <xs:selector xpath=".//dbo_FactInvoice" />
+          <xs:field xpath="TenantSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactInvoice_Contract" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactInvoice" />
+          <xs:field xpath="ContractSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactInvoice_Date" refer="dbo_DimDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactInvoice" />
+          <xs:field xpath="DateSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_DimRoom_DimRoomType" refer="dbo_DimRoomType_Constraint1">
+          <xs:selector xpath=".//dbo_DimRoom" />
+          <xs:field xpath="RoomTypeSK" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Rent_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

@@ -1,0 +1,2 @@
+# Kursova_NVBD_Variant_13_Kudriavtseva_Oleksandra_Mykhailivna
+Kursova
